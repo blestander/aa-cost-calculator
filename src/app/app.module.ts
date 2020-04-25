@@ -9,6 +9,7 @@ import { ItemComponent } from './item/item.component';
 import { ItemAttributeComponent } from './item-attribute/item-attribute.component';
 import { ItemCountComponent } from './item-count/item-count.component';
 import { TotalComponent } from './total/total.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
     declarations: [
@@ -19,6 +20,7 @@ import { TotalComponent } from './total/total.component';
         ItemAttributeComponent,
         ItemCountComponent,
         TotalComponent,
+        HeaderComponent,
     ],
     imports: [
         BrowserModule,
