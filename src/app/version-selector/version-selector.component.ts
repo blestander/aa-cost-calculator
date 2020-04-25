@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
     selector: 'app-version-selector',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./version-selector.component.css']
 })
 export class VersionSelectorComponent implements OnInit {
+
+    versionControl = new FormControl('')
 
     constructor() { }
 

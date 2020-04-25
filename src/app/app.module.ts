@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { VersionSelectorComponent } from './version-selector/version-selector.component';
@@ -7,10 +8,11 @@ import { VersionSelectorComponent } from './version-selector/version-selector.co
 @NgModule({
     declarations: [
         AppComponent,
-        VersionSelectorComponent
+        VersionSelectorComponent,
     ],
     imports: [
-        BrowserModule
+        BrowserModule,
+        ReactiveFormsModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

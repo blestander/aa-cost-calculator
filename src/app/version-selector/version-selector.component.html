@@ -1,1 +1,7 @@
-<p>version-selector works!</p>
+<p>
+    <label>
+        <input type="radio" value="1940" [formControl]="versionControl" />
+        Europe & Pacific 1940
+    </label>
+</p>
+<p>{{versionControl.value}}</p>
