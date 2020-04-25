@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import { Change } from '../change';
+import { Unit } from '../unit';
 
 @Component({
     selector: 'app-item',
@@ -9,10 +10,7 @@ import { Change } from '../change';
 })
 export class ItemComponent implements OnInit {
 
-    @Input() name: string;
-    @Input() cost: number;
-    @Input() attack: number;
-    @Input() defend: number;
+    @Input() unit: Unit;
     @Output() change = new EventEmitter<Change>();
 
     constructor() { }
