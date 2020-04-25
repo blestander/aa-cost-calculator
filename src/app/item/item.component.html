@@ -1,11 +1,7 @@
-<p>
-    {{unit.name}}
-    &emsp;
-    Cost: {{unit.cost}}
-    &emsp;
-    Attack: {{unit.attack}}
-    &emsp;
-    Defend: {{unit.defense}}
-    &emsp;
-    Move: {{unit.move}}
-</p>
+<div class="item">
+    <div class="item-name">{{unit.name}}</div>
+    <app-item-attribute name="Move" [value]="unit.move"></app-item-attribute>
+    <app-item-attribute name="Attack" [value]="unit.attack"></app-item-attribute>
+    <app-item-attribute name="Defense" [value]="unit.defense"></app-item-attribute>
+    <app-item-attribute name="Cost" [value]="unit.cost"></app-item-attribute>
+</div>

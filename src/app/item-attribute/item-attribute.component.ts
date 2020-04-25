@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
     selector: 'app-item-attribute',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./item-attribute.component.css']
 })
 export class ItemAttributeComponent implements OnInit {
+
+    @Input() name: string;
+    @Input() value: number;
 
     constructor() { }
 
