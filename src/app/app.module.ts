@@ -8,6 +8,7 @@ import { CostCalculatorComponent } from './cost-calculator/cost-calculator.compo
 import { ItemComponent } from './item/item.component';
 import { ItemAttributeComponent } from './item-attribute/item-attribute.component';
 import { ItemCountComponent } from './item-count/item-count.component';
+import { TotalComponent } from './total/total.component';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { ItemCountComponent } from './item-count/item-count.component';
         ItemComponent,
         ItemAttributeComponent,
         ItemCountComponent,
+        TotalComponent,
     ],
     imports: [
         BrowserModule,
