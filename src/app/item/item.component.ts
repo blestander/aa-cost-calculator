@@ -20,4 +20,8 @@ export class ItemComponent implements OnInit {
     ngOnInit(): void {
     }
 
+    onCountChange(newCount: number) {
+        alert(`New count: ${newCount}`);
+    }
+
 }

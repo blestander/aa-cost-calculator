@@ -1,6 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-
-import { Change } from '../change';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -10,7 +8,7 @@ import { FormControl } from '@angular/forms';
 })
 export class ItemCountComponent implements OnInit {
 
-    @Output() change = new EventEmitter<Change>();
+    @Output() changedCount = new EventEmitter<number>();
 
     countControl = new FormControl('');
 
