@@ -11,7 +11,7 @@ import { Unit } from '../unit';
 export class ItemComponent implements OnInit {
 
     @Input() unit: Unit;
-    @Output() change = new EventEmitter<Change>();
+    @Output() changedSubtotal = new EventEmitter<Change>();
 
     subtotal: number = 0;
 
@@ -21,7 +21,12 @@ export class ItemComponent implements OnInit {
     }
 
     onCountChange(newCount: number) {
-        alert(`New count: ${newCount}`);
+        let old = this.subtotal
+        this.subtotal = newCount * this.unit.cost;
+        this.changedSubtotal.emit({
+            old: old,
+            current: this.subtotal
+        })
     }
 
 }
