@@ -13,6 +13,8 @@ export class ItemComponent implements OnInit {
     @Input() unit: Unit;
     @Output() change = new EventEmitter<Change>();
 
+    subtotal: number = 0;
+
     constructor() { }
 
     ngOnInit(): void {
