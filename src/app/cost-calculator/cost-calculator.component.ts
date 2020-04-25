@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { Change } from '../change';
 import { Unit } from '../unit';
 import { UnitService } from '../unit.service';
 
@@ -19,6 +20,10 @@ export class CostCalculatorComponent implements OnInit {
 
     ngOnInit(): void {
         this.units = this.unitService.getUnits(this.version);
+    }
+
+    onSubtotalChange(change: Change) {
+        this.total = this.total - change.old + change.current;
     }
 
 }
