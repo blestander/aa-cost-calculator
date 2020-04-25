@@ -1,3 +1,4 @@
 <div class="body">
-    <app-version-selector></app-version-selector>
+    <app-version-selector (changedVersion)="onVersionChange($event)"></app-version-selector>
+    <app-cost-calculator *ngIf="version" [version]="version"></app-cost-calculator>
 </div>

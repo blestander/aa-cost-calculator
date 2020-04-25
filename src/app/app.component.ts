@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'Axis & Allies Cost Calculator';
+
+    version: string = null;
+
+    onVersionChange(newVersion: string) {
+        this.version = newVersion;
+    }
 }

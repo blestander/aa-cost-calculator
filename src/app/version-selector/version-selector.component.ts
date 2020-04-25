@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -8,11 +8,16 @@ import { FormControl } from '@angular/forms';
 })
 export class VersionSelectorComponent implements OnInit {
 
+    @Output() changedVersion = new EventEmitter<string>();
     versionControl = new FormControl('')
 
     constructor() { }
 
     ngOnInit(): void {
+    }
+
+    onVersionSelect() {
+        this.changedVersion.emit(this.versionControl.value);
     }
 
 }
