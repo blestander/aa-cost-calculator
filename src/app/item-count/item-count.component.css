@@ -1,0 +1,17 @@
+.item-count {
+    display: inline-block;
+    height: 40px;
+    width: 60px;
+    flex-grow: 0;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #AAAAAA;
+
+    text-align: center
+}
+
+.item-count-input {
+    width: 40px;
+}
