@@ -1,7 +1,9 @@
-<p>
-    <label>
-        <input type="radio" value="1940" [formControl]="versionControl" />
-        Europe & Pacific 1940
-    </label>
-</p>
-<app-cost-calculator *ngIf="versionControl.value" version="{{versionControl.value}}"></app-cost-calculator>
+<div class="version-selector">
+    <p class="version-select">
+        <label>
+            <input type="radio" value="1940" [formControl]="versionControl" />
+            Europe & Pacific 1940
+        </label>
+    </p>
+    <app-cost-calculator *ngIf="versionControl.value" version="{{versionControl.value}}"></app-cost-calculator>
+</div>
