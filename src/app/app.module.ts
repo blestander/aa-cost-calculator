@@ -7,6 +7,7 @@ import { VersionSelectorComponent } from './version-selector/version-selector.co
 import { CostCalculatorComponent } from './cost-calculator/cost-calculator.component';
 import { ItemComponent } from './item/item.component';
 import { ItemAttributeComponent } from './item-attribute/item-attribute.component';
+import { ItemCountComponent } from './item-count/item-count.component';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { ItemAttributeComponent } from './item-attribute/item-attribute.componen
         CostCalculatorComponent,
         ItemComponent,
         ItemAttributeComponent,
+        ItemCountComponent,
     ],
     imports: [
         BrowserModule,
