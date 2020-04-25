@@ -1,4 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap";
+
+body {
+    font-family: Bebas Neue;
+}
+
 .dark-border {
     border-radius: 5px;
     border-color: #000000;
