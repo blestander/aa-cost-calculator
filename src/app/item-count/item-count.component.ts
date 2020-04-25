@@ -17,6 +17,7 @@ export class ItemCountComponent implements OnInit {
     constructor() { }
 
     ngOnInit(): void {
+        this.countControl.setValue(0);
     }
 
 }
