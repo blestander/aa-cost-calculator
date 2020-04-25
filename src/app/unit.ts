@@ -3,4 +3,5 @@ export interface Unit {
     cost: number;
     attack: number;
     defend: number;
+    move: number;
 }
