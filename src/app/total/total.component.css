@@ -1,0 +1,43 @@
+.total {
+    width: 625px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+.total-name {
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+
+    border-radius: 5px;
+    border-color: #aaaaaa;
+    border-style: solid;
+    border-width: 1px;
+
+    text-align: center;
+}
+.total-spacer{
+    display: inline-block;
+    height: 40px;
+    width: 308px;
+    flex-grow: 0;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #AAAAAA;
+
+    text-align: center
+}

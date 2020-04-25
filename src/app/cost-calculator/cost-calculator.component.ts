@@ -13,6 +13,8 @@ export class CostCalculatorComponent implements OnInit {
     @Input() version: string;
     units: Unit[];
 
+    total: number = 0;
+
     constructor(private unitService: UnitService) { }
 
     ngOnInit(): void {

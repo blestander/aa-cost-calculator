@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
     selector: 'app-total',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./total.component.css']
 })
 export class TotalComponent implements OnInit {
+
+    @Input() total: number;
 
     constructor() { }
 
