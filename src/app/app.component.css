@@ -8,3 +8,9 @@ div.body {
         width: 584px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    div.body {
+        width: 400px;
+    }
+}
