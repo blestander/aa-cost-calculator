@@ -13,124 +13,44 @@ export class UnitService {
         switch (version) {
             case "1940":
                 return [
-                    {
-                        name: "Infantry",
-                        cost: 3,
-                        attack: 1,
-                        defense: 2,
-                        move: 1,
-                    }, {
-                        name: "Artillery",
-                        cost: 4,
-                        attack: 2,
-                        defense: 2,
-                        move: 1,
-                    }, {
-                        name: "Mechanized Infantry",
-                        cost: 4,
-                        attack: 1,
-                        defense: 2,
-                        move: 2,
-                    }, {
-                        name: "Tank",
-                        cost: 6,
-                        attack: 3,
-                        defense: 3,
-                        move: 2,
-                    }, {
-                        name: "AAA (Antiaircraft Artillery)",
-                        cost: 5,
-                        attack: 0,
-                        defense: 0,
-                        move: 1,
-                    }, {
-                        name: "Fighter",
-                        cost: 10,
-                        attack: 3,
-                        defense: 4,
-                        move: 4
-                    }, {
-                        name: "Tactical Bomber",
-                        cost: 11,
-                        attack: 3,
-                        defense: 3,
-                        move: 4,
-                    }, {
-                        name: "Strategic Bomber",
-                        cost: 12,
-                        attack: 4,
-                        defense: 1,
-                        move: 6,
-                    }, {
-                        name: "Battleship",
-                        cost: 20,
-                        attack: 4,
-                        defense: 4,
-                        move: 2
-                    }, {
-                        name: "Aircraft Carrier",
-                        cost: 16,
-                        attack: 0,
-                        defense: 2,
-                        move: 2,
-                    }, {
-                        name: "Cruiser",
-                        cost: 12,
-                        attack: 3,
-                        defense: 3,
-                        move: 2,
-                    }, {
-                        name: "Destroyer",
-                        cost: 8,
-                        attack: 2,
-                        defense: 2,
-                        move: 2
-                    }, {
-                        name: "Submarine",
-                        cost: 6,
-                        attack: 2,
-                        defense: 1,
-                        move: 2,
-                    }, {
-                        name: "Tranport",
-                        cost: 7,
-                        attack: 0,
-                        defense: 0,
-                        move: 2,
-                    }, {
-                        name: "Major Industrial Complex",
-                        attack: 0,
-                        defense: 0,
-                        move: 0,
-                        cost: 30,
-                    }, {
-                        name: "Minor Industrial Complex",
-                        cost: 12,
-                        attack: 0,
-                        defense: 0,
-                        move: 0,
-                    }, {
-                        name: "Industrial Complex Upgrade",
-                        cost: 18,
-                        attack: 0,
-                        defense: 0,
-                        move: 0,
-                    }, {
-                        name: "Air Base",
-                        cost: 15,
-                        attack: 0,
-                        defense: 0,
-                        move: 0,
-                    }, {
-                        name: "Sea Base",
-                        cost: 15,
-                        attack: 0,
-                        defense: 0,
-                        move: 0,
-                    }
+                    newUnit("Infantry", 3, 1, 2, 1),
+                    newUnit("Artillery", 4, 2, 2, 1),
+                    newUnit("Mechanized Infantry", 4, 1, 2, 2),
+                    newUnit("Tank", 6, 3, 3, 2),
+                    newUnit("AAA (Antiaircraft Artillery)", 5, 0, 0, 1),
+                    newUnit("Fighter", 10, 3, 4, 4),
+                    newUnit("Tactical Bomber", 11, 3, 3, 4),
+                    newUnit("Strategic Bomber", 12, 4, 1, 6),
+                    newUnit("Battleship", 20, 4, 4, 2),
+                    newUnit("Aircraft Carrier", 16, 0, 2, 2),
+                    newUnit("Cruiser", 12, 3, 3, 2),
+                    newUnit("Destroyer", 8, 2, 2, 2),
+                    newUnit("Submarine", 6, 2, 1, 2),
+                    newUnit("Tranport", 7, 0, 0, 2),
+                    newUnit("Major Industrial Complex", 30, 0, 0, 0),
+                    newUnit("Minor Industrial Complex", 12, 0, 0, 0),
+                    newUnit("Industrial Complex Upgrade", 18, 0, 0, 0),
+                    newUnit("Air Base", 15, 0, 0, 0),
+                    newUnit("Sea Base", 15, 0, 0, 0)
                 ];
             default:
                 return new Array();
         }
+    }
+}
+
+function newUnit(
+    name: string,
+    cost: number,
+    attack: number,
+    defense: number,
+    move: number
+) : Unit {
+    return {
+        name: name,
+        cost: cost,
+        attack: attack,
+        defense: defense,
+        move: move
     }
 }
