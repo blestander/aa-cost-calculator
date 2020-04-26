@@ -12,8 +12,7 @@
     font-weight: bold;
 }
 .total-name {
-    height: 40px;
-    width: 200px;
+    height: 45px;
 
     display: flex;
     flex-direction: column;
@@ -22,11 +21,24 @@
 
     text-align: center;
 }
-.total-spacer{
-    display: inline-block;
-    height: 40px;
-    width: 308px;
-    flex-grow: 0;
+@media screen and (min-width: 600px) {
+    .total-name {
+        width: 200px;
+    }
+    .total-spacer {
+        display: inline-block;
+        height: 45px;
+        width: 308px;
+        flex-grow: 0;
 
-    text-align: center
+        text-align: center
+    }
+}
+@media screen and (max-width: 600px) {
+    .total-name {
+        width: 265px;
+    }
+    .total-space {
+        display: none;
+    }
 }
