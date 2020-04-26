@@ -1,5 +1,4 @@
 .total {
-    width: 625px;
     height: 50px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -13,9 +12,13 @@
     font-weight: bold;
 }
 .total-name {
-    display: inline-block;
     height: 40px;
     width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     text-align: center;
 }
