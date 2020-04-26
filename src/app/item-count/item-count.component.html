@@ -1,6 +1,7 @@
-<span class="item-count light-border">
+<span class="item-count light-border" (click)="focusField()">
     Count<br />
     <input
+        name="count-input"
         type="number"
         min=0
         [formControl]="countControl"
