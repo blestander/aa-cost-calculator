@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnChanges, Input } from '@angular/core';
 
 import { Change } from '../change';
 import { Unit } from '../unit';
@@ -9,7 +9,7 @@ import { UnitService } from '../unit.service';
     templateUrl: './cost-calculator.component.html',
     styleUrls: ['./cost-calculator.component.css']
 })
-export class CostCalculatorComponent implements OnInit {
+export class CostCalculatorComponent implements OnChanges {
 
     @Input() version: string;
     units: Unit[];
@@ -18,7 +18,7 @@ export class CostCalculatorComponent implements OnInit {
 
     constructor(private unitService: UnitService) { }
 
-    ngOnInit(): void {
+    ngOnChanges(): void {
         this.units = this.unitService.getUnits(this.version);
     }
 
