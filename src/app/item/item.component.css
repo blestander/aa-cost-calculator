@@ -11,9 +11,13 @@
     align-items: center;
 }
 .item-name {
-    display: inline-block;
     height: 45px;
     width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     text-align: center;
 }
