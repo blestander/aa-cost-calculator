@@ -373,7 +373,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _c0 = ["count-input"];
 class ItemCountComponent {
     constructor() {
         this.changedCount = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
@@ -382,19 +381,10 @@ class ItemCountComponent {
     ngOnInit() {
         this.countControl.setValue(0);
     }
-    focusField() {
-        this.countField.nativeElement.focus();
-    }
 }
 ItemCountComponent.ɵfac = function ItemCountComponent_Factory(t) { return new (t || ItemCountComponent)(); };
-ItemCountComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ItemCountComponent, selectors: [["app-item-count"]], viewQuery: function ItemCountComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.countField = _t.first);
-    } }, outputs: { changedCount: "changedCount" }, decls: 4, vars: 1, consts: [[1, "item-count", "light-border", 3, "click"], ["name", "count-input", "type", "number", "min", "0", 1, "item-count-input", 3, "formControl", "change"]], template: function ItemCountComponent_Template(rf, ctx) { if (rf & 1) {
+ItemCountComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ItemCountComponent, selectors: [["app-item-count"]], outputs: { changedCount: "changedCount" }, decls: 4, vars: 1, consts: [[1, "item-count", "light-border"], ["type", "number", "min", "0", 1, "item-count-input", 3, "formControl", "change"]], template: function ItemCountComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ItemCountComponent_Template_span_click_0_listener() { return ctx.focusField(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Count");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "input", 1);
@@ -412,10 +402,7 @@ ItemCountComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
                 templateUrl: './item-count.component.html',
                 styleUrls: ['./item-count.component.css']
             }]
-    }], function () { return []; }, { countField: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
-            args: ["count-input"]
-        }], changedCount: [{
+    }], function () { return []; }, { changedCount: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
         }] }); })();
 

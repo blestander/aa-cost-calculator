@@ -769,8 +769,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*! @angular/forms */
     "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 
-    var _c0 = ["count-input"];
-
     var ItemCountComponent = /*#__PURE__*/function () {
       function ItemCountComponent() {
         _classCallCheck(this, ItemCountComponent);
@@ -784,11 +782,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           this.countControl.setValue(0);
         }
-      }, {
-        key: "focusField",
-        value: function focusField() {
-          this.countField.nativeElement.focus();
-        }
       }]);
 
       return ItemCountComponent;
@@ -801,30 +794,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     ItemCountComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: ItemCountComponent,
       selectors: [["app-item-count"]],
-      viewQuery: function ItemCountComponent_Query(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
-        }
-
-        if (rf & 2) {
-          var _t;
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.countField = _t.first);
-        }
-      },
       outputs: {
         changedCount: "changedCount"
       },
       decls: 4,
       vars: 1,
-      consts: [[1, "item-count", "light-border", 3, "click"], ["name", "count-input", "type", "number", "min", "0", 1, "item-count-input", 3, "formControl", "change"]],
+      consts: [[1, "item-count", "light-border"], ["type", "number", "min", "0", 1, "item-count-input", 3, "formControl", "change"]],
       template: function ItemCountComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 0);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ItemCountComponent_Template_span_click_0_listener() {
-            return ctx.focusField();
-          });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Count");
 
@@ -863,10 +841,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }], function () {
         return [];
       }, {
-        countField: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
-          args: ["count-input"]
-        }],
         changedCount: [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
         }]
