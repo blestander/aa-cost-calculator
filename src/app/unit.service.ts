@@ -33,6 +33,22 @@ export class UnitService {
                     newUnit("Air Base", 15, 0, 0, 0),
                     newUnit("Sea Base", 15, 0, 0, 0)
                 ];
+            case "1942":
+                return [
+                    newUnit("Infantry", 3, 2, 3, 1),
+                    newUnit("Artillery", 4, 2, 2, 1),
+                    newUnit("Tank", 6, 3, 3, 2),
+                    newUnit("Antiaircraft Artillery", 5, 0, 0, 1),
+                    newUnit("Industrial Complex", 15, 0, 0, 0),
+                    newUnit("Fighter", 10, 3, 4, 4),
+                    newUnit("Bomber", 12, 4, 1, 6),
+                    newUnit("Battleship", 20, 4, 4, 2),
+                    newUnit("Aircraft Carrier", 14, 1, 2, 2),
+                    newUnit("Cruiser", 12, 3, 3, 2),
+                    newUnit("Destroyer", 8, 2, 2, 2),
+                    newUnit("Submarine", 6, 2, 1, 2),
+                    newUnit("Transport", 7, 0, 0, 2)
+                ]
             default:
                 return new Array();
         }
