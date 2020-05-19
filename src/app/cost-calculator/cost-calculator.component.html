@@ -1,2 +1,4 @@
-<app-item *ngFor="let unit of units" [unit]="unit" (changedSubtotal)="onSubtotalChange($event)"></app-item>
-<app-total [total]="total"></app-total>
+<div>
+    <app-item *ngFor="let unit of units" [unit]="unit" (changedSubtotal)="onSubtotalChange($event)"></app-item>
+    <app-total [total]="total"></app-total>
+</div>
