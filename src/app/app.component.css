@@ -3,9 +3,9 @@ div.body {
     margin-right: auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 550px) {
     div.body {
-        width: 584px;
+        width: 525px;
     }
 }
 

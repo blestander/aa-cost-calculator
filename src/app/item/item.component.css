@@ -1,6 +1,7 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
     .item {
         height: 50px;
+        width: 513px;
     }
     .item-name {
         width: 200px;
