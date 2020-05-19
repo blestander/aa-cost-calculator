@@ -65,6 +65,16 @@ export class UnitService {
                 return new Array();
         }
     }
+
+    repairsPossible(version: string): boolean {
+        switch(version) {
+            case "1940":
+            case "1942":
+                return true;
+            case "1941":
+                return false;
+        }
+    }
 }
 
 function newUnit(
