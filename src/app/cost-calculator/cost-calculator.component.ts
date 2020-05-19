@@ -26,4 +26,7 @@ export class CostCalculatorComponent implements OnChanges {
         this.total = this.total - change.old + change.current;
     }
 
+    reset() {
+        this.total = 0;
+    }
 }
