@@ -4,7 +4,9 @@ body {
     font-family: Bebas Neue;
     background-color: #4b5320;
 }
-
+.body-block {
+    background-color: palegoldenrod;
+}
 .dark-border {
     border-radius: 5px;
     border-color: #000000;
