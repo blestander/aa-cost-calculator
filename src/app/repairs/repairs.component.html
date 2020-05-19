@@ -1,1 +1,6 @@
-<p>repairs works!</p>
+<div class="dark-border body-block">
+    <span class="name light-border">Repairs</span>
+    <span class="spacer light-border"></span>
+    <app-item-count [resetCount]="resetCount" (changedCount)="onCountChange($event)"></app-item-count>
+    <app-item-attribute name="Subtotal" [value]="subtotal"></app-item-attribute>
+</div>
