@@ -9,12 +9,15 @@
     justify-content: center;
 }
 button {
-    background-color: darkgoldenrod;
+    background-color: goldenrod;
     border: none;
     border-radius: 5px;
     box-shadow: none;
-    padding: 2px;
+    padding: 5px;
     color: #660000; /* Blood red */
     font-family: 'Bebas Neue';
     font-size: 100%;
+}
+button:active {
+    background-color: darkgoldenrod;
 }
