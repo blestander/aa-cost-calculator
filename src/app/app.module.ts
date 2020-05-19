@@ -11,6 +11,7 @@ import { ItemCountComponent } from './item-count/item-count.component';
 import { TotalComponent } from './total/total.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { RepairsComponent } from './repairs/repairs.component';
 
 @NgModule({
     declarations: [
@@ -23,6 +24,7 @@ import { FooterComponent } from './footer/footer.component';
         TotalComponent,
         HeaderComponent,
         FooterComponent,
+        RepairsComponent,
     ],
     imports: [
         BrowserModule,
