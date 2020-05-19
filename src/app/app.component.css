@@ -3,9 +3,15 @@ div.body {
     margin-right: auto;
 }
 
-@media only screen and (min-width: 550px) {
+@media screen and (min-width: 550px) and (max-width: 1100px) {
     div.body {
         width: 535px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    div.body {
+        width: 1070px;
     }
 }
 
