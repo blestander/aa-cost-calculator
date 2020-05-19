@@ -1,13 +1,13 @@
 @media screen and (min-width: 550px) {
     .item {
         height: 50px;
-        width: 513px;
+        width: 523px;
     }
     .item-name {
         width: 200px;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     .item {
         height: 100px;
         flex-wrap: wrap;

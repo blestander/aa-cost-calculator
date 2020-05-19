@@ -21,20 +21,20 @@
 
     text-align: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
     .total-name {
         width: 200px;
     }
     .total-spacer {
         display: inline-block;
         height: 45px;
-        width: 268px;
+        width: 266px;
         flex-grow: 0;
 
         text-align: center
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     .total-name {
         width: 265px;
     }

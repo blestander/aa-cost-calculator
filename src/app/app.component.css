@@ -5,11 +5,11 @@ div.body {
 
 @media only screen and (min-width: 550px) {
     div.body {
-        width: 525px;
+        width: 535px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     div.body {
         width: 350px;
     }
