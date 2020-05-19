@@ -1,4 +1,4 @@
-<div>
+<div class="twocols">
     <app-item *ngFor="let unit of units" [unit]="unit" (changedSubtotal)="onSubtotalChange($event)"></app-item>
     <app-total [total]="total"></app-total>
 </div>
