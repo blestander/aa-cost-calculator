@@ -1,8 +1,8 @@
 footer {
     text-align: center;
-    font-size: 80%
+    font-size: 80%;
+    color: goldenrod;
 }
-
 footer a {
-    color: black;
+    color: darkgoldenrod;
 }
