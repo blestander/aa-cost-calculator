@@ -15,7 +15,13 @@
 
 @media screen and (max-width: 550px) {
     div {
-        width: 320px;
+        width: 338px;
+    }
+    .name {
+        width: 206px;
+    }
+    .spacer {
+        display: none;
     }
 }
 
@@ -28,6 +34,7 @@ div {
     height: 50px;
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 
