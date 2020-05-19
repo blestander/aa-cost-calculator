@@ -3,7 +3,14 @@
         *ngFor="let unit of units"
         [unit]="unit"
         [resetCount]="resetCount"
-        (changedSubtotal)="onSubtotalChange($event)"></app-item>
+        (changedSubtotal)="onSubtotalChange($event)">
+    </app-item>
+    <app-item
+        *ngIf="repairsPossible"
+        [unit]="repairUnit"
+        [resetCount]="resetCount"
+        (changedSubtotal)="onSubtotalChange($event)">
+    </app-item>
     <app-total [total]="total"></app-total>
 </div>
 <span class="button-centered">

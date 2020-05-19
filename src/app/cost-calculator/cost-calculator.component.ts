@@ -24,6 +24,14 @@ export class CostCalculatorComponent implements OnChanges {
         this.reset();
     }
 
+    get repairsPossible(): boolean {
+        return this.unitService.repairsPossible(this.version);
+    }
+
+    get repairUnit(): Unit {
+        return this.unitService.repairUnit();
+    }
+
     onSubtotalChange(change: Change) {
         this.total = this.total - change.old + change.current;
     }

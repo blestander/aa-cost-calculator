@@ -75,6 +75,10 @@ export class UnitService {
                 return false;
         }
     }
+
+    repairUnit(): Unit {
+        return newUnit("Repairs", 1, 0, 0, 0)
+    }
 }
 
 function newUnit(
