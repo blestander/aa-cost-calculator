@@ -22,13 +22,13 @@
     padding-left: 5px;
     padding-right: 5px;
 
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
     -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
+    break-inside: avoid-column;
 }
 .item-name {
     height: 45px;
