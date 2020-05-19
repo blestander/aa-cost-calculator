@@ -15,11 +15,13 @@ export class CostCalculatorComponent implements OnChanges {
     units: Unit[];
 
     total: number = 0;
+    resetCount: number = 0;
 
     constructor(private unitService: UnitService) { }
 
     ngOnChanges(): void {
         this.units = this.unitService.getUnits(this.version);
+        this.reset();
     }
 
     onSubtotalChange(change: Change) {
@@ -28,5 +30,6 @@ export class CostCalculatorComponent implements OnChanges {
 
     reset() {
         this.total = 0;
+        this.resetCount++;
     }
 }

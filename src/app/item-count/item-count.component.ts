@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input, OnChanges } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -6,15 +6,16 @@ import { FormControl } from '@angular/forms';
     templateUrl: './item-count.component.html',
     styleUrls: ['./item-count.component.css']
 })
-export class ItemCountComponent implements OnInit {
+export class ItemCountComponent implements OnChanges {
 
+    @Input() resetCount: number;
     @Output() changedCount = new EventEmitter<number>();
 
     countControl = new FormControl('');
 
     constructor() { }
 
-    ngOnInit(): void {
+    ngOnChanges(): void {
         this.countControl.setValue(0);
     }
 

@@ -1,5 +1,9 @@
 <div class="twocols">
-    <app-item *ngFor="let unit of units" [unit]="unit" (changedSubtotal)="onSubtotalChange($event)"></app-item>
+    <app-item
+        *ngFor="let unit of units"
+        [unit]="unit"
+        [resetCount]="resetCount"
+        (changedSubtotal)="onSubtotalChange($event)"></app-item>
     <app-total [total]="total"></app-total>
 </div>
 <span class="button-centered">

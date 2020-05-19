@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 
 import { Change } from '../change';
 import { Unit } from '../unit';
@@ -8,16 +8,26 @@ import { Unit } from '../unit';
     templateUrl: './item.component.html',
     styleUrls: ['./item.component.css']
 })
-export class ItemComponent implements OnInit {
+export class ItemComponent implements OnInit, OnChanges {
 
     @Input() unit: Unit;
+    @Input() resetCount: number;
     @Output() changedSubtotal = new EventEmitter<Change>();
 
     subtotal: number = 0;
+    internalResetCount: number;
 
     constructor() { }
 
     ngOnInit(): void {
+        this.internalResetCount = this.resetCount;
+    }
+
+    ngOnChanges() {
+        if (this.resetCount != this.internalResetCount) {
+            this.internalResetCount = this.resetCount;
+            this.subtotal = 0;
+        }
     }
 
     onCountChange(newCount: number) {
